@@ -18,14 +18,21 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    {{-- datatables --}}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
+
+    {{-- Icon --}}
+    <link rel="stylesheet" href="{{ asset('plugin\fontawesome-free-5.15.2-web\css\all.min.css') }}">
+    <script src="{{ asset('plugin\fontawesome-free-5.15.2-web\js\all.min.js') }}"></script>
 </head>
 <body>
     <div id="app">
         <nav class="navbar fixed-top navbar-expand-md navbar-dark shadow-sm" style="background-color: #202020;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img class="img-thumbnail" src="{{ asset('image/ONLYLOGO.png') }}" alt="LaPMat" style="width: 40px; height: 40px">
-                    {{ config('app.name', 'LaPMat') }}
+                    <img src="{{ asset('image/Group 45.svg') }}" alt="Pro" style="width: 40px; height: 40px">
+                    {{ config('app.name', 'Pro') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -35,20 +42,20 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a href="" class="nav-link">Dashboard</a>
+                            <a href="{{ url('/') }}" class="nav-link">Dashboard</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">Data Master</a>
                             <div class="dropdown-menu">
-                                <a href="" class="dropdown-item">Petugas</a>
-                                <a href="" class="dropdown-item">Masyarakat</a>
+                                <a href="petugas" class="dropdown-item">Petugas</a>
+                                <a href="masyarakat" class="dropdown-item">Masyarakat</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Aduan</a>
+                            <a href="aduan" class="nav-link">Aduan</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Laporan</a>
+                            <a href="laporan" class="nav-link">Laporan</a>
                         </li>
                     </ul>
 
@@ -101,5 +108,9 @@
             </div>
         </footer>
     </div>
+
+    {{-- datatables --}}
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
 </body>
 </html>

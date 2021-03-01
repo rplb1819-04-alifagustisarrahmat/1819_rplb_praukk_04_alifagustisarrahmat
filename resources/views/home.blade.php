@@ -16,8 +16,8 @@
 
                 <div class="card-body">
                     <div class="row">
-                        <div class="col"><span><i class="user-icon"></i></span></div>
-                        <div class="col"><h4>0</h4></div>
+                        <div class="col"><span><i class="fas fa-users fa-4x"></i></span></div>
+                        <div class="col"><h1>0</h1></div>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                 
                 <div class="card-body">
                     <div class="row">
-                        <div class="col"><span><i class="user-icon"></i></span></div>
+                        <div class="col"><span><i class="fas fa-users fa-4x"></i></span></div>
                         <div class="col"><h4>0</h4></div>
                     </div>
                     
@@ -41,7 +41,7 @@
                 
                 <div class="card-body">
                     <div class="row">
-                        <div class="col"><span><i class="user-icon"></i></span></div>
+                        <div class="col"><span><i class="fas fa-hourglass-end fa-4x"></i></span></div>
                         <div class="col"><h4>0</h4></div>
                     </div>
                 </div>

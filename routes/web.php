@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,16 @@ Route::get('/register', 'Auth\RegisterController@showRegistrationForm')->name('r
 Route::post('/register', 'Auth\RegisterController@register')->name('register');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('petugas', 'UsersController@index');
+Route::get('tambah', 'PetugasController@create');
+Route::get('detail', 'PetugasController@show');
+Route::get('edit', 'PetugasController@edit');
+
+Route::get('masyarakat', 'MasyarakatController@index');
+Route::get('detail', 'MasyarakatController@show');
+
+Route::get('aduan', 'AduanController@index');
+Route::get('detail', 'AduanController@show');
+
+Route::get('laporan', 'LaporanController@index');
